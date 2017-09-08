@@ -3,6 +3,9 @@ Git -- Version Control Software
 
 Topics:
 -init
+-status
 -add
+-commit
+-log
 
 Should be enoght for today...
