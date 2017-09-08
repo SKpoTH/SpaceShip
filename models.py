@@ -10,12 +10,15 @@ class World:
         self.ship = Ship(self, 100, 100)
 
         self.gold = Gold(self, 400, 400)
+
+        self.score =0
   
     def update(self, delta):
         self.ship.update(delta) #update from Ship (self.ship = Ship)
 
         if self.ship.hit(self.gold, 15):
             self.gold.random_location()
+            self.score += 1
 
     def on_key_press(self, key, key_modifiers):
         if key == arcade.key.SPACE:
